@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <p>{{historial}}</p>
+    <div class="container">
+        <div class="card">
+            <label for="cedula">Cédula</label>
+            <input class="cedula" id="cedula" type="text" placeholder="Cédula*" maxlength="10">
+            <label for="fc_nacimiento">Fecha de nacimiento</label>
+            <input class="fc-nacimiento" id="fc-nacimiento" type="date">
+            <p>Recuerda las medidas de bioseguridad.Usa mascarilla y mantén la distancia de dos metros con otras
+                personas</p>
+            <p>Infórmate por medios oficiales y sigue las recomendaciones dada por el ministerio de salud.</p>
+            <button type="button">Consulta</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div>
+                <p><strong>Nombre: </strong><span id="nombre">Henry Heriberto Pérez Muñoz</span></p>
+                <p><strong>Provincia: </strong><span id="canton">Quinsaloma</span></p>
+                <p><strong>Cantón: </strong><span id="parroquia">Quinsaloma</span></p>
+                <p><strong>Centro de vacunación: </strong><span id="centro">Unidad Educativa 16 de Mayo</span></p>
+                <p><strong>Dirección: </strong><span id="direccion">16 de Mayo y San Francisco - Quinsaloma</span></p>
+                <p><strong>Primera dosis: </strong><span id="pr-dosis">VACUNADO/A (PFIZER)</span></p>
+                <p><strong>Segunda dosis: </strong><span id="sc-dosis">VIERNES, 27 DE AGOSTO DE 2021
+                        (13:00-17:00)</span></p>
+            </div>
+            <button type="button" class="close">Aceptar</button>
+        </div>
+    </div>
 </body>
+
 </html>
