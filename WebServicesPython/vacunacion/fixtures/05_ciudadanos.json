@@ -1,0 +1,70 @@
+[
+    {
+        "model": "vacunacion.ciudadanos",
+        "pk": 1,
+        "fields": {
+            "nombre1": "Darlyn",
+            "nombre2": "Omar",
+            "apellido1": "Buenaño",
+            "apellido2": "Vera",
+            "cedula": "1207636794",
+            "provincia_id": 1,
+            "canton_id": 1,
+            "parroquia_id": 1,
+            "centroVacunacion_id": 1,
+            "primeraDosis": "Domingo, 15 de agosto de 2021",
+            "segundaDosis": "Pendiente de asignación"
+        }
+    },
+    {
+        "model": "vacunacion.ciudadanos",
+        "pk": 2,
+        "fields": {
+            "nombre1": "Carlos",
+            "nombre2": "Ivan",
+            "apellido1": "Almeida",
+            "apellido2": "Dueñas",
+            "cedula": "0929168581",
+            "provincia_id": 2,
+            "canton_id": 2,
+            "parroquia_id": 2,
+            "centroVacunacion_id": 2,
+            "primeraDosis": "Domingo, 15 de agosto de 2021",
+            "segundaDosis": "Pendiente de asignación"
+        }
+    },
+    {
+        "model": "vacunacion.ciudadanos",
+        "pk": 3,
+        "fields": {
+            "nombre1": "John",
+            "nombre2": "Gary",
+            "apellido1": "Plazarte",
+            "apellido2": "Suárez",
+            "cedula": "1203436794",
+            "provincia_id": 3,
+            "canton_id": 3,
+            "parroquia_id": 3,
+            "centroVacunacion_id": 3,
+            "primeraDosis": "Domingo, 15 de agosto de 2021",
+            "segundaDosis": "Pendiente de asignación"
+        }
+    },
+    {
+        "model": "vacunacion.ciudadanos",
+        "pk": 4,
+        "fields": {
+            "nombre1": "Henry",
+            "nombre2": "Heriberto",
+            "apellido1": "Pérez",
+            "apellido2": "Muñoz",
+            "cedula": "1207636789",
+            "provincia_id": 4,
+            "canton_id": 4,
+            "parroquia_id": 4,
+            "centroVacunacion_id": 4,
+            "primeraDosis": "Domingo, 15 de agosto de 2021",
+            "segundaDosis": "Pendiente de asignación"
+        }
+    }
+]
