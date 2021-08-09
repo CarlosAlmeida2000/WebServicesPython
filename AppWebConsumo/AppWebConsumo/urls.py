@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from vacunacion.views import vwLugarVotac
+from vacunacion.views import vwLugarVacun
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', vwLugarVotac),
+    path('', vwLugarVacun),
 ]

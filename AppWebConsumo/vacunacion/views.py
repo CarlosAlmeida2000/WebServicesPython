@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .service import get_LgVotac
+from .service import get_LgVacun
 # Create your views here.
 
-def vwLugarVotac(request):
+def vwLugarVacun(request):
     context = {
-        'historial': get_LgVotac()
+        'historial': get_LgVacun()
     }
     return render(request,'index.html',context)
