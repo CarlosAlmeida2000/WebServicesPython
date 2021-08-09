@@ -1,0 +1,5 @@
+1. instalar la libreria requests
+pip install requests
+
+2. ejecutar por el puerto diferente 
+ejemplo: python manage.py runserver 7000
