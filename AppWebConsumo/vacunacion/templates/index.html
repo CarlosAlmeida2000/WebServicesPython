@@ -15,24 +15,26 @@
 <body>
     <div class="container">
         <div class="card">
-            <div>
+            <div class="text">
                 <label for="cedula">Cédula</label>
                 <input class="cedula" id="cedula" type="text" placeholder="Cédula*" maxlength="10">
             </div>
-            <div>
+            <div class="text">
                 <label for="fc_nacimiento">Fecha de nacimiento</label>
                 <input class="fc-nacimiento" id="fc-nacimiento" type="date">
             </div>
             <div class="term">
                 <p>Recuerda las medidas de bioseguridad.Usa mascarilla y mantén la distancia de dos metros con otras
-                    personas</p>
+                    personas.</p>
                 <p>Infórmate por medios oficiales y sigue las recomendaciones dada por el ministerio de salud.</p>
             </div>
-            <button type="button">Consulta</button>
+            <div class="button">
+                <button type="button" id="consulta" class="btn">Consulta</button>
+            </div>
         </div>
     </div>
 
-    <div class="modal">
+    <div class="modal" id="myModal">
         <div class="modal-content">
             <div>
                 <p><strong>Nombre: </strong><span id="nombre">Henry Heriberto Pérez Muñoz</span></p>
@@ -44,9 +46,14 @@
                 <p><strong>Segunda dosis: </strong><span id="sc-dosis">VIERNES, 27 DE AGOSTO DE 2021
                         (13:00-17:00)</span></p>
             </div>
-            <button type="button" class="close">Aceptar</button>
+            <div class="button">
+                <button type="button" id="aceptar" class="btn">Aceptar</button>
+            </div>
         </div>
     </div>
+
+    <script src="../../static/js/modal.js"></script>
+
 </body>
 
 </html>
