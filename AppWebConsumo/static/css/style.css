@@ -1,3 +1,17 @@
 * {
-    background-color: aqua;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 5px 0;
+}
+
+.container .term {
+    width: 80%;
+    color: rgb(21, 21, 136);
+    margin: auto;
 }
