@@ -16,14 +16,17 @@
         <div class="title">
             CONSULTA TU CENTRO DE VACUNACIÓN
         </div>
+        
         <div class="card">
+            <form action="/" method="POST">
+            {% csrf_token %}
             <div class="text">
                 <label for="cedula">Cédula</label>
-                <input class="cedula" id="cedula" type="text" placeholder="Cédula*" maxlength="10">
+                <input class="cedula" id="cedula" name="cedula" type="text" placeholder="Cédula*" maxlength="10">
             </div>
             <div class="text">
                 <label for="nombres">Nombres</label>
-                <input class="nombres" id="nombres" type="text" placeholder="Ejem. Juan Jacinto Gonzales Moreira">
+                <input class="nombres" id="nombres" name="nombres" type="text" placeholder="Ejem. Juan Jacinto Gonzales Moreira">
             </div>
             <div class="term">
                 <p>Recuerda las medidas de bioseguridad.Usa mascarilla y mantén la distancia de dos metros con otras
@@ -31,15 +34,16 @@
                 <p>Infórmate por medios oficiales y sigue las recomendaciones dada por el ministerio de salud.</p>
             </div>
             <div class="button">
-                <button type="button" id="consulta" class="btn">Consulta</button>
+                <button type="submit" id="consulta" class="btn">Consulta</button>
             </div>
+        </form>
         </div>
     </div>
-
+    {% if result %}
     <div class="modal" id="myModal">
         <div class="modal-content">
             <div>
-                <p><strong>Nombre: </strong><span id="nombre">Henry Heriberto Pérez Muñoz</span></p>
+                <p><strong>Nombre: </strong><span id="nombre">{{ result.nombres }}</span></p>
                 <p><strong>Provincia: </strong><span id="canton">Quinsaloma</span></p>
                 <p><strong>Cantón: </strong><span id="parroquia">Quinsaloma</span></p>
                 <p><strong>Centro de vacunación: </strong><span id="centro">Unidad Educativa 16 de Mayo</span></p>
@@ -53,7 +57,9 @@
             </div>
         </div>
     </div>
-
+    {% else %}
+        <p>Error</p>
+    {% endif %}
     <script src="{% static 'js/modal.js' %}"></script>
 
 </body>

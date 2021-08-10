@@ -23,8 +23,8 @@ class Vacunacion(APIView):
         if request.method == 'POST':
             try:
                 json_data = json.loads(request.body.decode('utf-8'))
-                cedula = json_data[0]['cedula']
-                nombres = (json_data[0]['nombres']).split()
+                cedula = json_data['cedula']
+                nombres = (json_data['nombres']).split()
                 nombre1 = nombres[0].upper()
                 nombre2 = nombres[1]
                 apellido1 = nombres[2]
