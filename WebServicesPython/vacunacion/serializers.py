@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from WebServicesPython.vacunacion.models import *
+from vacunacion.models import *
 
 class CiudadanoSerializer(serializers.ModelSerializer):
     class Meta:
