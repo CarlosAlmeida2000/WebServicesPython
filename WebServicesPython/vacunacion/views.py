@@ -25,13 +25,13 @@ class Vacunacion(APIView):
                 json_data = json.loads(request.body.decode('utf-8'))
                 cedula = json_data['cedula']
                 nombres = (json_data['nombres']).split()
-                nombre1 = nombres[0].upper()
+                nombre1 = nombres[0]
                 nombre2 = nombres[1]
                 apellido1 = nombres[2]
                 apellido2 = nombres[3]
                 unCiudadano = ciudadanos.objects.get(cedula=cedula, nombre1__icontains=nombre1, nombre2__icontains=nombre2, apellido1__icontains=apellido1, apellido2__icontains=apellido2)
                 json_consulta = {
-                    "nombres": json_data[0]['nombres'].upper(),
+                    "nombres": json_data['nombres'].upper(),
                     "provincia": unCiudadano.provincia.provincia,
                     "canton": unCiudadano.canton.canton,
                     "centro_vacunacion": unCiudadano.centroVacunacion.centro_vacunacion,
