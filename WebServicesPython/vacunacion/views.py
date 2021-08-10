@@ -1,9 +1,5 @@
-from typing import ContextManager
-from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
-from django.db import transaction
 from vacunacion.models import *   
 from vacunacion.serializers import *
 import json
