@@ -8,15 +8,6 @@ from vacunacion.models import *
 from vacunacion.serializers import *
 import json
 
-'''
-@api_view(['GET'])
-def ciudadano_api_view(request):
-    if request.method == 'GET':
-        ciudadano = ciudadanos.objects.all()
-        ciudadano_serializer = ciudadano_serializer(ciudadano, many = True)
-        return Response(ciudadano_serializer.data)
-'''
-
 class Vacunacion(APIView):
     
     def post(self, request, format = None):
