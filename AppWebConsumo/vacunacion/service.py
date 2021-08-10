@@ -2,7 +2,8 @@ import requests
 import json
 
 def generate_request(url, params={}):
-    response = requests.post(url, params=params)
+    headers = {'content-type': 'application/json'}
+    response = requests.post(url, data=json.dumps(params),headers=headers)
     if response.status_code == 200:
         return response.json()
 

@@ -40,27 +40,17 @@
         </div>
     </div>
     {% if result %}
-    <div class="modal" id="myModal">
-        <div class="modal-content">
-            <div>
-                <p><strong>Nombre: </strong><span id="nombre">{{ result.nombres }}</span></p>
-                <p><strong>Provincia: </strong><span id="canton">Quinsaloma</span></p>
-                <p><strong>Cantón: </strong><span id="parroquia">Quinsaloma</span></p>
-                <p><strong>Centro de vacunación: </strong><span id="centro">Unidad Educativa 16 de Mayo</span></p>
-                <p><strong>Dirección: </strong><span id="direccion">16 de Mayo y San Francisco - Quinsaloma</span></p>
-                <p><strong>Primera dosis: </strong><span id="pr-dosis">VACUNADO/A (PFIZER)</span></p>
-                <p><strong>Segunda dosis: </strong><span id="sc-dosis">VIERNES, 27 DE AGOSTO DE 2021
-                        (13:00-17:00)</span></p>
-            </div>
-            <div class="button">
-                <button type="button" id="aceptar" class="btn">Aceptar</button>
-            </div>
-        </div>
-    </div>
+    <p><strong>Nombre: </strong><span id="nombre">{{ result.nombres }}</span></p>
+    <p><strong>Provincia: </strong><span id="canton">{{ result.provincia }}</span></p>
+    <p><strong>Cantón: </strong><span id="parroquia">{{ result.canton }}</span></p>
+    <p><strong>Centro de vacunación: </strong><span id="centro">{{ result.centro_vacunacion }}</span></p>
+    <p><strong>Dirección: </strong><span id="direccion">{{ result.direccion }}</span></p>
+    <p><strong>Primera dosis: </strong><span id="pr-dosis">{{ result.primera_dosis }}</span></p>
+    <p><strong>Segunda dosis: </strong><span id="sc-dosis">{{ result.segunda_dosis }}</span></p>
     {% else %}
-        <p>Error</p>
+    <p style="color:red;" >!Error¡ Ciudadano no encontrado</p>
     {% endif %}
-    <script src="{% static 'js/modal.js' %}"></script>
+</div>
 
 </body>
 
