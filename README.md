@@ -30,7 +30,7 @@ Instalar la API para utilizar peticiones **REST** en Django Python, ejecutar el 
 
 ### **Paso 4**
 
-Instalar el controlador de la conección de PostgreSQL ejecutando el siguiente comando en la consola de tu ordenador.
+Instalar el controlador de la conexión de PostgreSQL ejecutando el siguiente comando en la consola de tu ordenador.
 
     pip install psycopg2 ==2.8.6
 
